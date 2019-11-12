@@ -1,12 +1,21 @@
-<h1> Europe & the Mediteranean Sea</h1>
-<app-search
-  [countries]="countries"
-  [highlightedText]="textHighlighted"
-  (highlightedCountry)="highlightMap($event)">
-</app-search>
-<app-map
-  [highlightedCountries]="countriesHighlighted"
-  (hoveredCountry)="highlightText($event)">
-</app-map>
+<div class="app-container">
+  <div class="col-1">
+    <h1> Europe & the Mediteranean Sea</h1>
+    <app-map
+      [highlightedCountries]="countriesHighlighted"
+      (hoveredCountry)="highlightText($event)">
+    </app-map>
+    <h3>Map Legend</h3>
+    <app-legend
+      [countries]="countries"
+      [highlightedText]="textHighlighted"
+      (highlightedCountry)="highlightMap($event)">
+    </app-legend>
+  </div>
+  <div class="col-2">
+    <app-checkboxes [countries]="countries"></app-checkboxes>
+    <app-actions></app-actions>
+  </div>
+</div>
 
 <router-outlet></router-outlet>

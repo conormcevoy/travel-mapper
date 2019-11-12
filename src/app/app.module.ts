@@ -1,21 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MapComponent } from './map-component';
-import { SearchComponent } from './search-component';
+import { ActionsComponent, MapComponent, LegendComponent, CheckboxesComponent } from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    SearchComponent
+    LegendComponent,
+    CheckboxesComponent,
+    ActionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

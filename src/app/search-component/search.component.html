@@ -1,0 +1,8 @@
+<div class="country-list">
+  <span
+    *ngFor="let country of countries"
+    (mouseenter)="mouseEnter(country.code)"
+    [ngClass]="getClass(country.code)">
+    {{ country.label }}
+  </span>
+</div>

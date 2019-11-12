@@ -1,0 +1,6 @@
+<h1> Select the countries you have visited </h1>
+<div class="checkboxes">
+  <div *ngFor="let country of countries">
+    <mat-checkbox [id]="country.code">{{ country.label }}</mat-checkbox>
+  </div>
+</div>

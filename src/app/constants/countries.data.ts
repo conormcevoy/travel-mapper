@@ -7,10 +7,10 @@ export const Countries = [
     code: 'tn',
     label: 'Tunisia'
   },
-  {
-    code: 'gg',
-    label: '' // Chanel Islands
-  },
+  // {
+  //   code: 'gg',
+  //   label: 'Guernsey'
+  // },
   {
     code: 'is',
     label: 'Iceland'
@@ -23,10 +23,10 @@ export const Countries = [
     code: 'im',
     label: 'Isle of Man'
   },
-  {
-    code: 'je',
-    label: 'Jersey'
-  },
+  // {
+  //   code: 'je',
+  //   label: 'Jersey'
+  // },
   {
     code: 'gb',
     label: 'United Kingdom'
@@ -236,7 +236,7 @@ export const Countries = [
     label: 'Egypt'
   },
   {
-    code: 'pl',
+    code: 'ps',
     label: 'Palestine'
   },
   {
